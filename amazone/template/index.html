@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JDshoes</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="grid-container">
+        <header class="header">
+            <div class="brand">
+                <button onclick="openMenu()">
+                    &#9776;
+                </button>
+                <a href="index.html">JDshoes</a>
+            </div>
+            <div class="header-links">
+                <a href="cart.html">Cart</a>
+                <a href="signin.html">Signin</a>
+            </div>
+        </header>
+        <aside class="sidebar">
+            <h3>Shopping Categories</h3>
+            <button class="sidebar-close-button" onclick="closeMenu()">&#9747</button>
+            <ul>
+                <li>
+                    <a href="index.html">Men</a>
+                </li>
+                <li>
+                    <a href="index.html">Women</a>
+                </li>
+            </ul>
+        </aside>
+        <main class="main">
+            <div class="content">
+                <ul class="products">
+                    <li class="product">
+                        <img class="product-image" src="/amazone/ImageData/jordan-1-1.jpg" alt="product">
+                        <div class="product-name">
+                            <a href="product.html"> Slim Shirt</a>
+                        </div>
+                        <div class="product-brand"> Nike </div>
+                        <div class="product-price">$100</div>
+                        <div class="product-rating">5 stars (100 reviews)</div>
+                    </li>
+                    <li class="product">
+                        <img class="product-image" src="/amazone/ImageData/jordan-1-1.jpg" alt="product">
+                        <div class="product-name">
+                            <a href="product.html"> Slim Shirt</a>
+                        </div>
+                        <div class="product-brand"> Nike </div>
+                        <div class="product-price">$100</div>
+                        <div class="product-rating">5 stars (100 reviews)</div>
+                    </li>
+                    <li class="product">
+                        <img class="product-image" src="/amazone/ImageData/jordan-1-1.jpg" alt="product">
+                        <div class="product-name">
+                            <a href="product.html"> Slim Shirt</a>
+                        </div>
+                        <div class="product-brand"> Nike </div>
+                        <div class="product-price">$100</div>
+                        <div class="product-rating">5 stars (100 reviews)</div>
+                    </li>
+                </ul>
+            </div>
+            
+        </main>
+        <footer class="footer">
+            All right reserved.
+        </footer>
+    </div>
+    <script>
+        function openMenu(){
+            document.querySelector(".sidebar").classList.add("open");
+        }
+        function closeMune() {
+            document.querySelector(".sidebar").classList.remove("open");
+        }
+    </script>
+</body>
+
+</html>
